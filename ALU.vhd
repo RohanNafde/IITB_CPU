@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity alu is
 	port(A: in std_logic_vector(15 downto 0);
@@ -11,7 +12,8 @@ entity alu is
 end entity;
 
 architecture behav of alu is
-	signal temp_add: std_logic_vector(16 downto 0)
+	signal temp_add: std_logic_vector(16 downto 0);
+	signal tem: std_logic_vector(15 downto 0);
 	
 	-- Adder
 	function add(A: in std_logic_vector(15 downto 0);
@@ -22,13 +24,12 @@ architecture behav of alu is
 	variable carry : std_logic_vector(16 downto 0):= (others=>'0');
 	
 	begin
-		full_adder:
 		for i in 0 to 15 loop
-			sum(i):= carry(i) xor (A(i) xor B(i));
-			carry(i+1):= (A(i) and B(i)) or (B(i) and carry(i)) or (A(i) and carry(i));
-		end loop full_adder;
+			sum(i) := carry(i) xor (A(i) xor B(i));
+			carry(i+1) := (A(i) and B(i)) or (B(i) and carry(i)) or (A(i) and carry(i));
+		end loop;
 		
-		sum(16):= carry(16);
+		sum(16) := carry(16);
 		return sum;
 	end add;
 	
@@ -63,10 +64,9 @@ architecture behav of alu is
 	variable bitwise : std_logic_vector(15 downto 0):= (others=>'0');
 	
 	begin
-		bit_nand:
 		for i in 0 to 15 loop
 			bitwise(i) := A(i) nand B(i);
-		end loop bit_nand;
+		end loop;
 		
 	return bitwise;
 	end Bitwise;
@@ -75,31 +75,35 @@ architecture behav of alu is
 	begin
 		alu : process(A, B, control_lines)
 		begin
-			temp_add <= add(A, B)
+			temp_add <= add(A, B);
 			
 			main_if:
-			if (control_lines(3) = '0')and(control_lines(3) = '0') then
-				C <= temp_add(15 downto 0);
-				carry_flag <= temp_add(16);
-				if (unsigned(C)=0)
+			if ((control_lines(1) = '0')and(control_lines(0) = '0')) then
+				tem <= temp_add(15 downto 0);
+				carry_out <= temp_add(16);
+				if (unsigned(tem)=0) then
 					zero_out <= '1';
 				else
 					zero_out <= '0';
 				end if;
-			elsif (control_lines(3) = '0')and(control_lines(3) = '1') then
-				C <= sub(B, A);
-				if (unsigned(C)=0)
+				
+			elsif ((control_lines(1) = '0')and(control_lines(0) = '1')) then
+				tem <= sub(B, A);
+				if (unsigned(tem)=0) then
 					zero_out <= '1';
 				else
 					zero_out <= '0';
 				end if;
-			elsif (control_lines(3) = '1')and(control_lines(3) = '0') then
-				C <= Bitwise(A, B);
-				if (unsigned(C)=0)
+				
+			elsif ((control_lines(1) = '1')and(control_lines(0) = '0')) then
+				tem <= Bitwise(A, B);
+				if (unsigned(tem)=0) then
 					zero_out <= '1';
 				else
 					zero_out <= '0';
 				end if;
 			end if main_if;
+			
+			c <= tem;
 		end process ;
 	end behav ;
