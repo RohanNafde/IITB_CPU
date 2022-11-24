@@ -11,11 +11,12 @@ entity alu is
 		 zero_out: out std_logic);
 end entity;
 
-architecture behav of alu is
+architecture bhv of alu is
 	signal temp_add: std_logic_vector(16 downto 0);
 	signal tem: std_logic_vector(15 downto 0);
 	
 	-- Adder
+	
 	function add(A: in std_logic_vector(15 downto 0);
 		B: in std_logic_vector(15 downto 0))
 	return std_logic_vector is
@@ -34,6 +35,7 @@ architecture behav of alu is
 	end add;
 	
 	-- Subtractor
+	
 	function sub(A: in std_logic_vector(15 downto 0);
 		B: in std_logic_vector(15 downto 0))
 	return std_logic_vector is
@@ -57,6 +59,7 @@ architecture behav of alu is
 	end sub;
 	
 	-- Bitwise NAND
+	
 	function Bitwise(A: in std_logic_vector(15 downto 0);
 		B: in std_logic_vector(15 downto 0))
 	return std_logic_vector is
@@ -71,7 +74,9 @@ architecture behav of alu is
 	return bitwise;
 	end Bitwise;
 	
+	
 	-- main
+	
 	begin
 		alu : process(A, B, control_lines)
 		begin
@@ -106,4 +111,4 @@ architecture behav of alu is
 			
 			c <= tem;
 		end process ;
-	end behav ;
+	end bhv ;
