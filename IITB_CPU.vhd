@@ -3,8 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity IITB_CPU is
-  port(clk: in std_logic
-  );
+	port(clk: in std_logic);
 end entity IITB_CPU;
 
 architecture ach of IITB_CPU is
@@ -46,29 +45,25 @@ component registers is
 			reg_d1: out std_logic_vector(15 downto 0);
 			reg_d2: out std_logic_vector(15 downto 0);
 			reg_d3: in std_logic_vector(15 downto 0);
-			clk: in std_logic
-	);
+			clk: in std_logic);
 end component registers;
 
 component mem is
-	port( mem_a1: in std_logic_vector(15 downto 0);
-	mem_a0: in std_logic_vector(15 downto 0);
-	 mem_d1: in std_logic_vector(15 downto 0);
-	 mem_d0: out std_logic_vector(15 downto 0);
-	 clk : in std_logic
-	 );
+	port(mem_a1, mem_a0, mem_d1: in std_logic_vector(15 downto 0);
+		mem_d0: out std_logic_vector(15 downto 0);
+		clk : in std_logic);
 end component mem;
 
 component SE6 is
-port (A: in std_logic_vector(5 downto 0); B: out std_logic_vector(15 downto 0));
+	port (A: in std_logic_vector(5 downto 0); B: out std_logic_vector(15 downto 0));
 end component SE6;
 
 component SE9 is
-port (A: in std_logic_vector(8 downto 0); B: out std_logic_vector(15 downto 0));
+	port (A: in std_logic_vector(8 downto 0); B: out std_logic_vector(15 downto 0));
 end component SE9;
 
 component RSE9 is
-port (A: in std_logic_vector(8 downto 0); B: out std_logic_vector(15 downto 0));
+	port (A: in std_logic_vector(8 downto 0); B: out std_logic_vector(15 downto 0));
 end component RSE9;
 
 component alu is
@@ -79,6 +74,11 @@ component alu is
 		 carry_out: out std_logic;
 		 zero_out: out std_logic);
 end component alu;
+
+component fsm is
+	port(clock, reset: in std_logic; op_code: in std_logic_vector (3 downto 0);  
+			C2, C1, C0: out std_logic  );
+end component fsm;
 
 begin
 
