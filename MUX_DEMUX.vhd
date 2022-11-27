@@ -8,11 +8,34 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity mux_2to1 is
-	port(A0, A1, S0 : in std_logic;
-		Z: out std_logic);
+	port(A0, A1: in std_logic_vector(15 downto 0); S0 : in std_logic;
+		Z: out std_logic_vector(15 downto 0));
 end mux_2to1;
 
 architecture bhv of mux_2to1 is
+
+begin
+	process (A0, A1, S0) is
+	begin
+		if (S0 ='0') then
+			Z <= A0;
+		elsif (S0 ='1') then
+			Z <= A1;
+		end if;
+	end process;
+end bhv;
+
+-- 2 to 1 MUX, 3 bit inputs
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux3_2to1 is
+	port(A0, A1: in std_logic_vector(2 downto 0); S0 : in std_logic;
+		Z: out std_logic_vector(2 downto 0));
+end mux3_2to1;
+
+architecture bhv of mux3_2to1 is
 
 begin
 	process (A0, A1, S0) is
@@ -31,8 +54,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity mux_4to1 is
-	port(A0, A1, A2, A3, S0, S1 : in std_logic;
-		Z: out std_logic);
+	port(A0, A1, A2, A3: in std_logic_vector(15 downto 0); S0, S1 : in std_logic;
+		Z: out std_logic_vector(15 downto 0));
 end mux_4to1;
 
 architecture bhv of mux_4to1 is
@@ -48,6 +71,59 @@ begin
 			Z <= A2;
 		elsif (S0 ='1' and S1 = '1') then
 			Z <= A3;
+		end if;
+	end process;
+end bhv;
+
+-- 4 to 1 MUX, 3 bit inputs
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity mux3_4to1 is
+	port(A0, A1, A2, A3: in std_logic_vector(2 downto 0); S0, S1 : in std_logic;
+		Z: out std_logic_vector(2 downto 0));
+end mux3_4to1;
+
+architecture bhv of mux3_4to1 is
+
+begin
+	process (A0, A1, A2, A3, S0, S1) is
+	begin
+		if (S0 ='0' and S1 = '0') then
+			Z <= A0;
+		elsif (S0 ='1' and S1 = '0') then
+			Z <= A1;
+		elsif (S0 ='0' and S1 = '1') then
+			Z <= A2;
+		elsif (S0 ='1' and S1 = '1') then
+			Z <= A3;
+		end if;
+	end process;
+end bhv;
+
+-- 3 to 1 MUX, 3 bit inputs
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity mux_3to1 is
+	port(A0, A1, A2: in std_logic_vector(2 downto 0); S0, S1 : in std_logic;
+		Z: out std_logic_vector(2 downto 0));
+end mux_3to1;
+
+architecture bhv of mux_3to1 is
+
+begin
+	process (A0, A1, A2, S0, S1) is
+	begin
+		if (S0 ='0' and S1 = '0') then
+			Z <= A0;
+		elsif (S0 ='1' and S1 = '0') then
+			Z <= A1;
+		elsif (S0 ='0' and S1 = '1') then
+			Z <= A2;
 		end if;
 	end process;
 end bhv;
