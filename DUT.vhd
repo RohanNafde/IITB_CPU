@@ -6,12 +6,12 @@ use ieee.std_logic_1164.all;
 
 entity DUT is
     port(input_vector: in std_logic_vector(1 downto 0);
-       	output_vector: out std_logic_vector(15 downto 0));
+       	output_vector: out std_logic_vector(18 downto 0));
 end entity;
 
 architecture DutWrap of DUT is
 component IITB_CPU is
-	port (clk, reset: in std_logic; op: out std_logic_vector(15 downto 0));
+	port (clk, reset: in std_logic;  op1: out std_logic_vector(15 downto 0); op2 : out std_logic_vector(2 downto 0));
 end component IITB_CPU;
 begin
 
@@ -23,5 +23,6 @@ begin
 					clk => input_vector(1),
 					reset => input_vector(0),
                -- order of output OUTPUT
-					op => output_vector(15 downto 0));
+					op1 => output_vector(18 downto 3),
+					op2 => output_vector(2 downto 0));
 end DutWrap;

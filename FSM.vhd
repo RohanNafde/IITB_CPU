@@ -43,7 +43,7 @@ begin
 
 		when S2 =>
 			if ((op_code = "0001" or op_code = "0000") and 
-				((lsb(1) = '1' and carry = '0') or (lsb(0) = '0' and zero = '0'))) then 
+				((lsb(1) = '1' and carry = '0') or (lsb(0) = '1' and zero = '0'))) then 
 				ns <= S1;
 			else 
 				ns <= S3;
@@ -54,7 +54,7 @@ begin
 				ns <= S1;
 			elsif (op_code(3) = '1' or op_code(2) = '1') then 
 				ns <= S6;
-			elsif (imm(c) = '0') then
+			elsif (imm(c) = '0' and op_code(3) = '0' and op_code(2) = '1' and op_code(1) = '1') then
 				ns <= S3;
 			elsif (op_code(2) = '1' or op_code(0) = '1') then 
 				ns <= S5;

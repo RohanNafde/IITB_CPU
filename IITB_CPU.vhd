@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity IITB_CPU is
-  port(clk, reset: in std_logic; op: out std_logic_vector(15 downto 0)
+  port(clk, reset: in std_logic; op1: out std_logic_vector(15 downto 0); op2 : out std_logic_vector(2 downto 0)
   );
 end entity IITB_CPU;
 
@@ -66,10 +66,7 @@ component registers is
 			reg_d1: out std_logic_vector(15 downto 0);
 			reg_d2: out std_logic_vector(15 downto 0);
 			reg_d3: in std_logic_vector(15 downto 0);
-			clk: in std_logic;
-			--testing
-			op: out std_logic_vector(15 downto 0)
-			--testing
+			clk: in std_logic
 	);
 end component registers;
 
@@ -133,7 +130,7 @@ O1 <= T1(13);
 O0 <= T1(12);
 sig1 <= O2 and O1;
 sig3 <= not O1;
-sig5 <= C1 and C0;
+sig5 <= (C1 and (not C2)) or C0;
 sig6 <= O3 xor O2;
 sig7 <= (O3 and (not O1)) or (O0 and O1);
 sig8 <= "0000000000000" & count;
@@ -148,7 +145,7 @@ sig13(1) <= ((not O3) and (not O2) and O1 and (not O0));
 mux1: mux_2to1 port map (A0 => T2, A1 => pc, S0 => X1, Z => alu_a);
 mux2: mux_2to1 port map (A0 => T3, A1 => sig8, S0 => sig1, Z => sig2);
 mux3: mux_2to1 port map (A0 => s6, A1 => s9, S0 => sig3, Z => sig4);
-mux4: mux_4to1 port map (A0 => x"0001", A1 => sig2, A2 => x"0001", A3 => sig4, S0 => C2, S1 => sig5, Z => alu_b);
+mux4: mux_4to1 port map (A0 => x"0001", A1 => sig2, A2 => x"0001", A3 => sig4, S0 => sig5, S1 => C2, Z => alu_b);
 mux5: mux_4to1 port map (A0 => T2, A1 => rs9, A2 => mem_d0, A3 => pc, S0 => sig6, S1 => sig7, Z => rf_d3);
 mux6: mux3_4to1 port map (A0 => T1(5 downto 3), A1 => T1(8 downto 6), A2 => T1(11 downto 9), A3 => count, S0 => sig9, S1 => sig10, Z => sig17);
 mux7: mux_3to1 port map (A0 => T1(11 downto 9), A1 => T1(8 downto 6), A2 => count, S0 => sig11, S1 => sig12, Z => rf_a1);
@@ -167,12 +164,16 @@ fsm1: fsm port map (clock => clk, reset => reset, carry => c_out, zero => z_out,
 alu1: alu port map (A => alu_a, B => alu_b, C => alu_c, control_lines => sig13, carry_out => c_out, zero_out => z_out); 
 mem1: mem port map (mem_a1 => T2, mem_a0 => mem_a0, mem_d1 => rf_d1, mem_d0 => mem_d0, clk => clk);
 --testing
-reg1: registers port map (reg_a1 => rf_a1, reg_a2 => T1(8 downto 6), reg_a3 => rf_a3, reg_d1 => rf_d1, reg_d2 => rf_d2, reg_d3 => rf_d3, clk => clk, op => op);
+reg1: registers port map (reg_a1 => rf_a1, reg_a2 => T1(8 downto 6), reg_a3 => rf_a3, reg_d1 => rf_d1, reg_d2 => rf_d2, reg_d3 => rf_d3, clk => clk);
 --testing
 se1: SE6 port map (A => T1(5 downto 0), B => s6);
 se2: SE9 port map (A => T1(8 downto 0), B => s9);
 se3: RSE9 port map (A => T1(8 downto 0), B => rs9);
 cu1: CU port map (C0 => C0, C1 => C1, C2 => C2, T1_WR =>t1_wr, T2_WR => t2_wr, T3_WR => t3_wr, RF_WR => rf_wr, PC_WR => pc_wr, Mem_WR => mem_wr);
 
+op1 <= pc;
+op2(0) <= c0;
+op2(1) <= c1;
+op2(2) <= c2;
 
 end ach;

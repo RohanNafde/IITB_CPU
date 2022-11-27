@@ -109,6 +109,6 @@ architecture bhv of alu is
 				end if;
 			end if main_if;
 			
-			c <= tem;
+			C <= tem;
 		end process ;
 	end bhv ;

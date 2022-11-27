@@ -9,8 +9,7 @@ entity registers is
 			reg_d1: out std_logic_vector(15 downto 0);
 			reg_d2: out std_logic_vector(15 downto 0);
 			reg_d3: in std_logic_vector(15 downto 0);
-			clk: in std_logic;
-			op: out std_logic_vector(15 downto 0)
+			clk: in std_logic
 	);
 end entity;
 
@@ -31,12 +30,9 @@ end process;
 
 regs_write: process(clk)
 begin
- if (falling_edge(clk)) then
+ if (rising_edge(clk)) then
 	regs(to_integer(unsigned(reg_a3))) <= reg_d3;
  end if;
 end process;
-
---testing
-op <= regs(2);
 
 end behav;
