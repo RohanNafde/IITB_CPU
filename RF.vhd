@@ -9,14 +9,15 @@ entity registers is
 			reg_d1: out std_logic_vector(15 downto 0);
 			reg_d2: out std_logic_vector(15 downto 0);
 			reg_d3: in std_logic_vector(15 downto 0);
-			clk: in std_logic
+			clk: in std_logic;
+			op: out std_logic_vector(15 downto 0)
 	);
 end entity;
 
 architecture behav of registers is 
 type mem_array is array (0 to 6 ) of std_logic_vector (15 downto 0);
 signal regs: mem_array :=(
-   x"0000",x"FFFF", x"FFFF", x"FFFF",
+   x"0009",x"0006", x"0001", x"FFFF",
 	x"FFFF",x"FFFF", x"FFFF"
    ); 
 --pc defined seperately as a signal in IITB_CPU
@@ -34,5 +35,8 @@ begin
 	regs(to_integer(unsigned(reg_a3))) <= reg_d3;
  end if;
 end process;
+
+--testing
+op <= regs(2);
 
 end behav;

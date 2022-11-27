@@ -15,7 +15,7 @@ end fsm;
 architecture bhv of fsm is
 
 type statetype is (S1, S2, S3, S4, S5, S6, S7, S8);
-signal ps, ns: statetype;  
+signal ps, ns: statetype := S1;  
 signal c: integer;
 begin 
 

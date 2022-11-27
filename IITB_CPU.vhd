@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity IITB_CPU is
-  port(clk, reset: in std_logic
+  port(clk, reset: in std_logic; op: out std_logic_vector(15 downto 0)
   );
 end entity IITB_CPU;
 
@@ -66,7 +66,10 @@ component registers is
 			reg_d1: out std_logic_vector(15 downto 0);
 			reg_d2: out std_logic_vector(15 downto 0);
 			reg_d3: in std_logic_vector(15 downto 0);
-			clk: in std_logic
+			clk: in std_logic;
+			--testing
+			op: out std_logic_vector(15 downto 0)
+			--testing
 	);
 end component registers;
 
@@ -163,7 +166,9 @@ mux16: mux3_2to1 port map (A0 => rf_a3, A1 => sig17, S0 => rf_wr, Z => rf_a3);
 fsm1: fsm port map (clock => clk, reset => reset, carry => c_out, zero => z_out, op_code => T1(15 downto 12), imm => T1(7 downto 0), lsb => T1(1 downto 0), C1 => C1, C2 => C2, C0 => C0, count => count);
 alu1: alu port map (A => alu_a, B => alu_b, C => alu_c, control_lines => sig13, carry_out => c_out, zero_out => z_out); 
 mem1: mem port map (mem_a1 => T2, mem_a0 => mem_a0, mem_d1 => rf_d1, mem_d0 => mem_d0, clk => clk);
-reg1: registers port map (reg_a1 => rf_a1, reg_a2 => T1(8 downto 6), reg_a3 => rf_a3, reg_d1 => rf_d1, reg_d2 => rf_d2, reg_d3 => rf_d3, clk => clk);
+--testing
+reg1: registers port map (reg_a1 => rf_a1, reg_a2 => T1(8 downto 6), reg_a3 => rf_a3, reg_d1 => rf_d1, reg_d2 => rf_d2, reg_d3 => rf_d3, clk => clk, op => op);
+--testing
 se1: SE6 port map (A => T1(5 downto 0), B => s6);
 se2: SE9 port map (A => T1(8 downto 0), B => s9);
 se3: RSE9 port map (A => T1(8 downto 0), B => rs9);
