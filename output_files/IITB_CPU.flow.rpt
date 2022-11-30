@@ -1,5 +1,5 @@
 Flow report for IITB_CPU
-Wed Nov 30 13:29:06 2022
+Wed Nov 30 21:59:35 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 30 13:29:06 2022       ;
+; Flow Status                        ; Successful - Wed Nov 30 21:59:35 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; IITB_CPU                                    ;
 ; Top-level Entity Name              ; DUT                                         ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2022 13:28:54 ;
+; Start date & time ; 11/30/2022 21:59:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; IITB_CPU            ;
 +-------------------+---------------------+
@@ -78,8 +78,8 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 176809985709290.166979513432304        ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Testbench.vhdl                    ;
+; COMPILER_SIGNATURE_ID                ; 176809985709290.166982576325224        ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut_instance                           ; --            ; --          ; Testbench.vhdl                    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -88,8 +88,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; Testbench.vhd                          ; --            ; --          ; Testbench.vhdl                    ;
 ; EDA_TEST_BENCH_FILE                  ; TRACEFILE.txt                          ; --            ; --          ; Testbench.vhdl                    ;
+; EDA_TEST_BENCH_FILE                  ; Testbench.vhd                          ; --            ; --          ; Testbench.vhdl                    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Testbench                              ; --            ; --          ; Testbench.vhdl                    ;
 ; EDA_TEST_BENCH_NAME                  ; Testbench.vhdl                         ; --            ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
@@ -110,8 +110,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4782 MB             ; 00:00:16                           ;
-; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Elaboration ; 00:00:13     ; 1.0                     ; 4782 MB             ; 00:00:20                           ;
+; Total                  ; 00:00:13     ; --                      ; --                  ; 00:00:20                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

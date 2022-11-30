@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:23 on Nov 30,2022
+# Start time: 21:59:57 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,11 +23,11 @@
 # -- Compiling architecture BHV of SE9
 # -- Compiling entity RSE9
 # -- Compiling architecture BHV of RSE9
-# End time: 13:29:23 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:58 on Nov 30,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:23 on Nov 30,2022
+# Start time: 21:59:58 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,38 +35,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity registers
 # -- Compiling architecture behav of registers
-# End time: 13:29:23 on Nov 30,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:23 on Nov 30,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_2to1
-# -- Compiling architecture bhv of mux_2to1
-# -- Compiling entity mux3_2to1
-# -- Compiling architecture bhv of mux3_2to1
-# -- Compiling entity mux_4to1
-# -- Compiling architecture bhv of mux_4to1
-# -- Compiling entity mux3_4to1
-# -- Compiling architecture bhv of mux3_4to1
-# -- Compiling entity mux_3to1
-# -- Compiling architecture bhv of mux_3to1
-# -- Compiling entity mux_8to1
-# -- Compiling architecture bhv of mux_8to1
-# -- Compiling entity demux_1to2
-# -- Compiling architecture bhv of demux_1to2
-# -- Compiling entity demux_1to4
-# -- Compiling architecture bhv of demux_1to4
-# -- Compiling entity demux_1to8
-# -- Compiling architecture bhv of demux_1to8
-# End time: 13:29:23 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:58 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:23 on Nov 30,2022
+# Start time: 21:59:58 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -74,11 +47,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mem
 # -- Compiling architecture behav of mem
-# End time: 13:29:23 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:58 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:24 on Nov 30,2022
+# Start time: 21:59:58 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -86,11 +59,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IITB_CPU
 # -- Compiling architecture ach of IITB_CPU
-# End time: 13:29:24 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:58 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:24 on Nov 30,2022
+# Start time: 21:59:58 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -100,22 +73,22 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity fsm
 # -- Compiling architecture bhv of fsm
-# End time: 13:29:24 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:58 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:24 on Nov 30,2022
+# Start time: 21:59:58 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DUT
 # -- Compiling architecture DutWrap of DUT
-# End time: 13:29:24 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:58 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:24 on Nov 30,2022
+# Start time: 21:59:58 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -123,11 +96,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity CU
 # -- Compiling architecture bhv of CU
-# End time: 13:29:24 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:59 on Nov 30,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:24 on Nov 30,2022
+# Start time: 21:59:59 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -135,24 +108,24 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture bhv of alu
-# End time: 13:29:24 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:59 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:24 on Nov 30,2022
+# Start time: 21:59:59 on Nov 30,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Testbench
 # -- Compiling architecture Behave of Testbench
-# End time: 13:29:24 on Nov 30,2022, Elapsed time: 0:00:00
+# End time: 21:59:59 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 13:29:25 on Nov 30,2022
+# Start time: 21:59:59 on Nov 30,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -160,10 +133,6 @@
 # Loading work.dut(dutwrap)
 # Loading ieee.numeric_std(body)
 # Loading work.iitb_cpu(ach)
-# Loading work.mux_2to1(bhv)
-# Loading work.mux_4to1(bhv)
-# Loading work.mux3_4to1(bhv)
-# Loading work.mux_3to1(bhv)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.fsm(bhv)
@@ -181,10 +150,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/reg1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/mem1
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/alu1
 # ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
@@ -193,10 +158,6 @@
 #    Time: 0 ps  Iteration: 0  Instance: /testbench
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut_instance/add_instance/alu1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 3  Instance: /testbench/dut_instance/add_instance/alu1
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
 #    Time: 19 ns  Iteration: 0  Instance: /testbench
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
@@ -205,12 +166,12 @@
 #    Time: 38 ns  Iteration: 0  Instance: /testbench
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
 #    Time: 38 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 57 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 57 ns  Iteration: 0  Instance: /testbench
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 38 ns  Iteration: 4  Instance: /testbench/dut_instance/add_instance/alu1
-# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
-#    Time: 57 ns  Iteration: 0  Instance: /testbench
-# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
-#    Time: 57 ns  Iteration: 0  Instance: /testbench
+#    Time: 57 ns  Iteration: 2  Instance: /testbench/dut_instance/add_instance/alu1
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
 #    Time: 76 ns  Iteration: 0  Instance: /testbench
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
@@ -235,7 +196,39 @@
 #    Time: 171 ns  Iteration: 0  Instance: /testbench
 # ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
 #    Time: 171 ns  Iteration: 0  Instance: /testbench
-# ** Note: SUCCESS, all tests passed.
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
 #    Time: 190 ns  Iteration: 0  Instance: /testbench
-# End time: 13:32:37 on Nov 30,2022, Elapsed time: 0:03:12
-# Errors: 21, Warnings: 6
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 190 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 209 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 209 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 228 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 228 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 247 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 247 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 266 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 266 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 285 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 285 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 304 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 304 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 323 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 19, found 16.
+#    Time: 323 ns  Iteration: 0  Instance: /testbench
+# ** Note: SUCCESS, all tests passed.
+#    Time: 342 ns  Iteration: 0  Instance: /testbench
+# End time: 22:00:46 on Nov 30,2022, Elapsed time: 0:00:47
+# Errors: 37, Warnings: 2

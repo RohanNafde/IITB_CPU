@@ -16,7 +16,7 @@ architecture behav of mem is
 	type mem_array is array (0 to 63) of std_logic_vector (15 downto 0);
 	
 	signal memory: mem_array := (
-	b"0000000001010000", x"00F0", x"0000", x"0000",
+	b"0000000001010000", x"0000", x"0000", x"0000",
 	x"0000",x"0000", x"0000", x"0000",
 	x"0000",x"0000", x"0000", x"0000",
 	x"0000",x"0000", x"0000", x"0000",

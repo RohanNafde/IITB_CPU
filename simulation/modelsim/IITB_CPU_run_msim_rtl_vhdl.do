@@ -7,7 +7,6 @@ vmap work rtl_work
 
 vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd}
 vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd}
-vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd}
 vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd}
 vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd}
 vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd}
