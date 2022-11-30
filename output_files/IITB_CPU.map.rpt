@@ -1,5 +1,5 @@
 Analysis & Elaboration report for IITB_CPU
-Sun Nov 27 20:34:13 2022
+Wed Nov 30 13:29:06 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  5. Port Connectivity Checks: "IITB_CPU:add_instance|mux_4to1:mux4"
+  6. Port Connectivity Checks: "IITB_CPU:add_instance|mux_2to1:mux2"
+  7. Analysis & Elaboration Messages
 
 
 
@@ -37,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Sun Nov 27 20:34:13 2022           ;
+; Analysis & Elaboration Status      ; Successful - Wed Nov 30 13:29:06 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; IITB_CPU                                    ;
 ; Top-level Entity Name              ; DUT                                         ;
@@ -61,8 +63,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -158,209 +160,220 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "IITB_CPU:add_instance|mux_4to1:mux4" ;
++-----------+-------+----------+----------------------------------+
+; Port      ; Type  ; Severity ; Details                          ;
++-----------+-------+----------+----------------------------------+
+; a1[15..1] ; Input ; Info     ; Stuck at GND                     ;
+; a1[0]     ; Input ; Info     ; Stuck at VCC                     ;
++-----------+-------+----------+----------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "IITB_CPU:add_instance|mux_2to1:mux2" ;
++-----------+-------+----------+----------------------------------+
+; Port      ; Type  ; Severity ; Details                          ;
++-----------+-------+----------+----------------------------------+
+; a1[15..3] ; Input ; Info     ; Stuck at GND                     ;
++-----------+-------+----------+----------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 27 20:34:00 2022
+    Info: Processing started: Wed Nov 30 13:28:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IITB_CPU -c IITB_CPU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
-    Info (12022): Found design unit 1: Testbench-Behave File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd Line: 9
-    Info (12023): Found entity 1: Testbench File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd Line: 7
+    Info (12022): Found design unit 1: Testbench-Behave File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd Line: 9
+    Info (12023): Found entity 1: Testbench File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd Line: 7
 Info (12021): Found 6 design units, including 3 entities, in source file se_rse.vhd
-    Info (12022): Found design unit 1: SE6-BHV File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd Line: 8
-    Info (12022): Found design unit 2: SE9-BHV File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd Line: 22
-    Info (12022): Found design unit 3: RSE9-BHV File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd Line: 36
-    Info (12023): Found entity 1: SE6 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd Line: 4
-    Info (12023): Found entity 2: SE9 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd Line: 18
-    Info (12023): Found entity 3: RSE9 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd Line: 32
+    Info (12022): Found design unit 1: SE6-BHV File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd Line: 8
+    Info (12022): Found design unit 2: SE9-BHV File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd Line: 22
+    Info (12022): Found design unit 3: RSE9-BHV File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd Line: 36
+    Info (12023): Found entity 1: SE6 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd Line: 4
+    Info (12023): Found entity 2: SE9 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd Line: 18
+    Info (12023): Found entity 3: RSE9 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd Line: 32
 Info (12021): Found 2 design units, including 1 entities, in source file rf.vhd
-    Info (12022): Found design unit 1: registers-behav File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd Line: 16
-    Info (12023): Found entity 1: registers File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd Line: 5
+    Info (12022): Found design unit 1: registers-behav File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd Line: 17
+    Info (12023): Found entity 1: registers File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd Line: 5
 Info (12021): Found 18 design units, including 9 entities, in source file mux_demux.vhd
-    Info (12022): Found design unit 1: mux_2to1-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 15
-    Info (12022): Found design unit 2: mux3_2to1-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 38
-    Info (12022): Found design unit 3: mux_4to1-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 61
-    Info (12022): Found design unit 4: mux3_4to1-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 89
-    Info (12022): Found design unit 5: mux_3to1-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 116
-    Info (12022): Found design unit 6: mux_8to1-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 141
-    Info (12022): Found design unit 7: demux_1to2-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 180
-    Info (12022): Found design unit 8: demux_1to4-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 202
-    Info (12022): Found design unit 9: demux_1to8-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 229
-    Info (12023): Found entity 1: mux_2to1 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 10
-    Info (12023): Found entity 2: mux3_2to1 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 33
-    Info (12023): Found entity 3: mux_4to1 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 56
-    Info (12023): Found entity 4: mux3_4to1 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 84
-    Info (12023): Found entity 5: mux_3to1 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 111
-    Info (12023): Found entity 6: mux_8to1 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 136
-    Info (12023): Found entity 7: demux_1to2 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 175
-    Info (12023): Found entity 8: demux_1to4 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 197
-    Info (12023): Found entity 9: demux_1to8 File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 224
+    Info (12022): Found design unit 1: mux_2to1-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 15
+    Info (12022): Found design unit 2: mux3_2to1-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 38
+    Info (12022): Found design unit 3: mux_4to1-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 61
+    Info (12022): Found design unit 4: mux3_4to1-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 89
+    Info (12022): Found design unit 5: mux_3to1-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 116
+    Info (12022): Found design unit 6: mux_8to1-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 141
+    Info (12022): Found design unit 7: demux_1to2-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 180
+    Info (12022): Found design unit 8: demux_1to4-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 202
+    Info (12022): Found design unit 9: demux_1to8-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 229
+    Info (12023): Found entity 1: mux_2to1 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 10
+    Info (12023): Found entity 2: mux3_2to1 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 33
+    Info (12023): Found entity 3: mux_4to1 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 56
+    Info (12023): Found entity 4: mux3_4to1 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 84
+    Info (12023): Found entity 5: mux_3to1 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 111
+    Info (12023): Found entity 6: mux_8to1 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 136
+    Info (12023): Found entity 7: demux_1to2 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 175
+    Info (12023): Found entity 8: demux_1to4 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 197
+    Info (12023): Found entity 9: demux_1to8 File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 224
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: mem-behav File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd Line: 14
-    Info (12023): Found entity 1: mem File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd Line: 5
+    Info (12022): Found design unit 1: mem-behav File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd Line: 15
+    Info (12023): Found entity 1: mem File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file iitb_cpu.vhd
-    Info (12022): Found design unit 1: IITB_CPU-ach File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 10
-    Info (12023): Found entity 1: IITB_CPU File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 5
+    Info (12022): Found design unit 1: IITB_CPU-ach File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 10
+    Info (12023): Found entity 1: IITB_CPU File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
-    Info (12022): Found design unit 1: fsm-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 15
-    Info (12023): Found entity 1: fsm File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 6
+    Info (12022): Found design unit 1: fsm-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 15
+    Info (12023): Found entity 1: fsm File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file dut.vhd
-    Info (12022): Found design unit 1: DUT-DutWrap File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd Line: 12
-    Info (12023): Found entity 1: DUT File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd Line: 7
+    Info (12022): Found design unit 1: DUT-DutWrap File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd Line: 12
+    Info (12023): Found entity 1: DUT File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file cu.vhd
-    Info (12022): Found design unit 1: CU-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 11
-    Info (12023): Found entity 1: CU File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 5
+    Info (12022): Found design unit 1: CU-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd Line: 11
+    Info (12023): Found entity 1: CU File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: alu-bhv File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 14
-    Info (12023): Found entity 1: alu File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 5
+    Info (12022): Found design unit 1: alu-bhv File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 14
+    Info (12023): Found entity 1: alu File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 5
 Info (12127): Elaborating entity "DUT" for the top level hierarchy
-Info (12128): Elaborating entity "IITB_CPU" for hierarchy "IITB_CPU:add_instance" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd Line: 20
-Info (12128): Elaborating entity "mux_2to1" for hierarchy "IITB_CPU:add_instance|mux_2to1:mux1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 145
-Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(18): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[3]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[4]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[5]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[6]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[7]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[8]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[9]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[10]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[11]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[12]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[13]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[14]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (10041): Inferred latch for "Z[15]" at MUX_DEMUX.vhd(18) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 18
-Info (12128): Elaborating entity "mux_4to1" for hierarchy "IITB_CPU:add_instance|mux_4to1:mux4" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 148
-Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(64): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[3]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[4]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[5]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[6]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[7]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[8]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[9]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[10]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[11]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[12]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[13]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[14]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (10041): Inferred latch for "Z[15]" at MUX_DEMUX.vhd(64) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 64
-Info (12128): Elaborating entity "mux3_4to1" for hierarchy "IITB_CPU:add_instance|mux3_4to1:mux6" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 150
-Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(92): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 92
-Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(92) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 92
-Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(92) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 92
-Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(92) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 92
-Info (12128): Elaborating entity "mux_3to1" for hierarchy "IITB_CPU:add_instance|mux_3to1:mux7" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 151
-Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(119): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 119
-Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(119) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 119
-Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(119) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 119
-Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(119) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 119
-Info (12128): Elaborating entity "mux3_2to1" for hierarchy "IITB_CPU:add_instance|mux3_2to1:mux16" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 160
-Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(41): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 41
-Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(41) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 41
-Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(41) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 41
-Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(41) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd Line: 41
-Info (12128): Elaborating entity "fsm" for hierarchy "IITB_CPU:add_instance|fsm:fsm1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 163
-Warning (10492): VHDL Process Statement warning at FSM.vhd(46): signal "lsb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at FSM.vhd(46): signal "carry" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at FSM.vhd(46): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at FSM.vhd(53): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at FSM.vhd(57): signal "imm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at FSM.vhd(57): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at FSM.vhd(64): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 64
-Warning (10631): VHDL Process Statement warning at FSM.vhd(31): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Warning (10492): VHDL Process Statement warning at FSM.vhd(145): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 145
-Info (10041): Inferred latch for "c[0]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[1]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[2]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[3]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[4]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[5]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[6]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[7]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[8]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[9]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[10]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[11]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[12]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[13]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[14]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[15]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[16]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[17]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[18]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[19]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[20]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[21]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[22]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[23]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[24]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[25]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[26]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[27]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[28]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[29]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[30]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (10041): Inferred latch for "c[31]" at FSM.vhd(31) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd Line: 31
-Info (12128): Elaborating entity "alu" for hierarchy "IITB_CPU:add_instance|alu:alu1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 164
-Warning (10492): VHDL Process Statement warning at ALU.vhd(87): signal "temp_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 87
-Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "temp_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 88
-Warning (10492): VHDL Process Statement warning at ALU.vhd(89): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 89
-Warning (10542): VHDL Variable Declaration warning at ALU.vhd(47): used initial value expression for variable "add_1" because variable was never assigned a value File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at ALU.vhd(97): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 97
-Warning (10492): VHDL Process Statement warning at ALU.vhd(105): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 105
-Warning (10492): VHDL Process Statement warning at ALU.vhd(112): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 112
-Warning (10631): VHDL Process Statement warning at ALU.vhd(81): inferring latch(es) for signal or variable "tem", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Warning (10631): VHDL Process Statement warning at ALU.vhd(81): inferring latch(es) for signal or variable "carry_out", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Warning (10631): VHDL Process Statement warning at ALU.vhd(81): inferring latch(es) for signal or variable "zero_out", which holds its previous value in one or more paths through the process File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "zero_out" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "carry_out" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[0]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[1]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[2]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[3]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[4]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[5]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[6]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[7]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[8]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[9]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[10]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[11]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[12]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[13]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[14]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (10041): Inferred latch for "tem[15]" at ALU.vhd(81) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd Line: 81
-Info (12128): Elaborating entity "mem" for hierarchy "IITB_CPU:add_instance|mem:mem1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 165
-Warning (10492): VHDL Process Statement warning at Memory.vhd(45): signal "memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd Line: 45
-Info (12128): Elaborating entity "registers" for hierarchy "IITB_CPU:add_instance|registers:reg1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 167
-Warning (10492): VHDL Process Statement warning at RF.vhd(27): signal "regs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at RF.vhd(28): signal "regs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd Line: 28
-Info (12128): Elaborating entity "SE6" for hierarchy "IITB_CPU:add_instance|SE6:se1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 169
-Info (12128): Elaborating entity "SE9" for hierarchy "IITB_CPU:add_instance|SE9:se2" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 170
-Info (12128): Elaborating entity "RSE9" for hierarchy "IITB_CPU:add_instance|RSE9:se3" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 171
-Info (12128): Elaborating entity "CU" for hierarchy "IITB_CPU:add_instance|CU:cu1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 172
-Error (10818): Can't infer register for "PC_WR" at CU.vhd(17) because it does not hold its value outside the clock edge File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 17
-Error (10818): Can't infer register for "T2_WR" at CU.vhd(17) because it does not hold its value outside the clock edge File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 17
-Error (10822): HDL error at CU.vhd(17): couldn't implement registers for assignments on this clock edge File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 17
-Error (10028): Can't resolve multiple constant drivers for net "PC_WR" at CU.vhd(28) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 28
-Error (10029): Constant driver at CU.vhd(17) File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd Line: 17
-Error (12152): Can't elaborate user hierarchy "IITB_CPU:add_instance|CU:cu1" File: C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd Line: 172
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 6 errors, 28 warnings
-    Error: Peak virtual memory: 4780 megabytes
-    Error: Processing ended: Sun Nov 27 20:34:13 2022
-    Error: Elapsed time: 00:00:13
-    Error: Total CPU time (on all processors): 00:00:31
+Info (12128): Elaborating entity "IITB_CPU" for hierarchy "IITB_CPU:add_instance" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd Line: 20
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "IITB_CPU:add_instance|mux_2to1:mux1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 148
+Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(18): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[3]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[4]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[5]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[6]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[7]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[8]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[9]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[10]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[11]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[12]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[13]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[14]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (10041): Inferred latch for "Z[15]" at MUX_DEMUX.vhd(18) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 18
+Info (12128): Elaborating entity "mux_4to1" for hierarchy "IITB_CPU:add_instance|mux_4to1:mux4" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 151
+Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(64): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[3]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[4]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[5]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[6]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[7]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[8]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[9]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[10]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[11]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[12]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[13]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[14]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (10041): Inferred latch for "Z[15]" at MUX_DEMUX.vhd(64) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 64
+Info (12128): Elaborating entity "mux3_4to1" for hierarchy "IITB_CPU:add_instance|mux3_4to1:mux6" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 153
+Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(92): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 92
+Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(92) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 92
+Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(92) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 92
+Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(92) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 92
+Info (12128): Elaborating entity "mux_3to1" for hierarchy "IITB_CPU:add_instance|mux_3to1:mux7" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 154
+Warning (10631): VHDL Process Statement warning at MUX_DEMUX.vhd(119): inferring latch(es) for signal or variable "Z", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 119
+Info (10041): Inferred latch for "Z[0]" at MUX_DEMUX.vhd(119) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 119
+Info (10041): Inferred latch for "Z[1]" at MUX_DEMUX.vhd(119) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 119
+Info (10041): Inferred latch for "Z[2]" at MUX_DEMUX.vhd(119) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd Line: 119
+Info (12128): Elaborating entity "fsm" for hierarchy "IITB_CPU:add_instance|fsm:fsm1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 203
+Warning (10492): VHDL Process Statement warning at FSM.vhd(46): signal "lsb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at FSM.vhd(46): signal "carry" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at FSM.vhd(46): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at FSM.vhd(53): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at FSM.vhd(53): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at FSM.vhd(57): signal "imm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at FSM.vhd(57): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at FSM.vhd(64): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 64
+Warning (10631): VHDL Process Statement warning at FSM.vhd(31): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at FSM.vhd(145): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 145
+Info (10041): Inferred latch for "c[0]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[1]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[2]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[3]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[4]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[5]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[6]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[7]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[8]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[9]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[10]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[11]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[12]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[13]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[14]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[15]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[16]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[17]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[18]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[19]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[20]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[21]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[22]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[23]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[24]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[25]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[26]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[27]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[28]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[29]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[30]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (10041): Inferred latch for "c[31]" at FSM.vhd(31) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd Line: 31
+Info (12128): Elaborating entity "alu" for hierarchy "IITB_CPU:add_instance|alu:alu1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 204
+Warning (10492): VHDL Process Statement warning at ALU.vhd(87): signal "temp_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "temp_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at ALU.vhd(89): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 89
+Warning (10542): VHDL Variable Declaration warning at ALU.vhd(47): used initial value expression for variable "add_1" because variable was never assigned a value File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at ALU.vhd(97): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 97
+Warning (10492): VHDL Process Statement warning at ALU.vhd(105): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 105
+Warning (10492): VHDL Process Statement warning at ALU.vhd(112): signal "tem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 112
+Warning (10631): VHDL Process Statement warning at ALU.vhd(81): inferring latch(es) for signal or variable "tem", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Warning (10631): VHDL Process Statement warning at ALU.vhd(81): inferring latch(es) for signal or variable "carry_out", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Warning (10631): VHDL Process Statement warning at ALU.vhd(81): inferring latch(es) for signal or variable "zero_out", which holds its previous value in one or more paths through the process File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "zero_out" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "carry_out" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[0]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[1]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[2]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[3]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[4]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[5]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[6]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[7]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[8]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[9]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[10]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[11]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[12]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[13]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[14]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (10041): Inferred latch for "tem[15]" at ALU.vhd(81) File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd Line: 81
+Info (12128): Elaborating entity "mem" for hierarchy "IITB_CPU:add_instance|mem:mem1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 205
+Warning (10492): VHDL Process Statement warning at Memory.vhd(39): signal "mem_wr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at Memory.vhd(48): signal "memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd Line: 48
+Info (12128): Elaborating entity "registers" for hierarchy "IITB_CPU:add_instance|registers:reg1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 207
+Warning (10492): VHDL Process Statement warning at RF.vhd(28): signal "regs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at RF.vhd(29): signal "regs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at RF.vhd(34): signal "rf_wr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd Line: 34
+Info (12128): Elaborating entity "SE6" for hierarchy "IITB_CPU:add_instance|SE6:se1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 209
+Info (12128): Elaborating entity "SE9" for hierarchy "IITB_CPU:add_instance|SE9:se2" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 210
+Info (12128): Elaborating entity "RSE9" for hierarchy "IITB_CPU:add_instance|RSE9:se3" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 211
+Info (12128): Elaborating entity "CU" for hierarchy "IITB_CPU:add_instance|CU:cu1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 212
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Wed Nov 30 13:29:06 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:16
 
 

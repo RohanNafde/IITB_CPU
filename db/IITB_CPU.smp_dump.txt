@@ -1,5 +1,5 @@
 
-State Machine - |IITB_CPU|fsm:fsm1|ps
+State Machine - |DUT|IITB_CPU:add_instance|fsm:fsm1|ps
 Name ps.S8 ps.S7 ps.S6 ps.S5 ps.S4 ps.S3 ps.S2 ps.S1 
 ps.S1 0 0 0 0 0 0 0 0 
 ps.S2 0 0 0 0 0 0 1 1 

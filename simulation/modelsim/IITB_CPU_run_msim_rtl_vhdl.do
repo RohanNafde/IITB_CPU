@@ -5,17 +5,17 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd}
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd}
 
-vcom -93 -work work {C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd}
+vcom -93 -work work {C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd}
 
 vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Testbench
 

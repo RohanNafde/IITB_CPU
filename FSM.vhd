@@ -42,7 +42,7 @@ begin
 			end if;
 
 		when S2 =>
-			if ((op_code = "0001" or op_code = "0000") and 
+			if ((op_code = "0000") and 
 				((lsb(1) = '1' and carry = '0') or (lsb(0) = '1' and zero = '0'))) then 
 				ns <= S1;
 			else 
@@ -50,13 +50,13 @@ begin
 			end if;
 
 		when S3 =>
-			if (op_code(3) = '1' and op_code(2) = '1' and zero = '1') then
+			if ((op_code(3) = '1' and op_code(2) = '1' and zero = '1') or (c>7)) then
 				ns <= S1;
-			elsif (op_code(3) = '1' or op_code(2) = '1') then 
+			elsif (op_code(3) = '1' and op_code(2) = '1') then 
 				ns <= S6;
 			elsif (imm(c) = '0' and op_code(3) = '0' and op_code(2) = '1' and op_code(1) = '1') then
 				ns <= S3;
-			elsif (op_code(2) = '1' or op_code(0) = '1') then 
+			elsif (op_code(2) = '1' and op_code(0) = '1') then 
 				ns <= S5;
 			else 
 				ns <= S4;
@@ -64,25 +64,25 @@ begin
 			c <= c + 1;
 
 		when S4 =>
-			if (op_code(2) = '1' or op_code(1) = '1') then 
-				ns <= S3;
-			elsif (op_code = "1000" or op_code = "1010") then 
+			if (op_code = "1000" or op_code = "1010") then 
 				ns <= S6;
 			elsif (op_code = "1001" or op_code = "1011") then 
 				ns <= S8;
+			elsif (op_code(2) = '1' and op_code(1) = '1') then 
+				ns <= S3;
 			else 
 				ns <= S1;
 			end if;
 
 		when S5 =>
-			if (op_code(2) = '1' or op_code(1) = '1') then 
+			if (op_code(2) = '1' and op_code(1) = '1') then 
 				ns <= S3;
 			else 
 				ns <= S1;
 			end if;
 
 		when S6 =>
-			if (op_code(3) = '1' or op_code(2) = '0') then 
+			if (op_code(3) = '1' and op_code(2) = '0') then 
 				ns <= S1;
 			else 
 				ns <= S7;

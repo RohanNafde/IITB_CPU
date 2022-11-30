@@ -4,75 +4,87 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "op[0]",
+					"name" : "output_vector[0]",
 					"strict" : false
 				},
 				{
-					"name" : "op[1]",
+					"name" : "output_vector[1]",
 					"strict" : false
 				},
 				{
-					"name" : "op[2]",
+					"name" : "output_vector[2]",
 					"strict" : false
 				},
 				{
-					"name" : "op[3]",
+					"name" : "output_vector[3]",
 					"strict" : false
 				},
 				{
-					"name" : "op[4]",
+					"name" : "output_vector[4]",
 					"strict" : false
 				},
 				{
-					"name" : "op[5]",
+					"name" : "output_vector[5]",
 					"strict" : false
 				},
 				{
-					"name" : "op[6]",
+					"name" : "output_vector[6]",
 					"strict" : false
 				},
 				{
-					"name" : "op[7]",
+					"name" : "output_vector[7]",
 					"strict" : false
 				},
 				{
-					"name" : "op[8]",
+					"name" : "output_vector[8]",
 					"strict" : false
 				},
 				{
-					"name" : "op[9]",
+					"name" : "output_vector[9]",
 					"strict" : false
 				},
 				{
-					"name" : "op[10]",
+					"name" : "output_vector[10]",
 					"strict" : false
 				},
 				{
-					"name" : "op[11]",
+					"name" : "output_vector[11]",
 					"strict" : false
 				},
 				{
-					"name" : "op[12]",
+					"name" : "output_vector[12]",
 					"strict" : false
 				},
 				{
-					"name" : "op[13]",
+					"name" : "output_vector[13]",
 					"strict" : false
 				},
 				{
-					"name" : "op[14]",
+					"name" : "output_vector[14]",
 					"strict" : false
 				},
 				{
-					"name" : "op[15]",
+					"name" : "output_vector[15]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "output_vector[16]",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "output_vector[17]",
+					"strict" : false
+				},
+				{
+					"name" : "output_vector[18]",
+					"strict" : false
+				},
+				{
+					"name" : "input_vector[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_vector[0]",
 					"strict" : false
 				}
 			]

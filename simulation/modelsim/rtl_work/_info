@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Aakarsh Chaudhary/Documents/Git/Test/simulation/modelsim
+Z0 dC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/simulation/modelsim
 Ealu
-Z1 w1669556978
+Z1 w1669564846
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 8
 R0
-Z5 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd
-Z6 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd
+Z5 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd
+Z6 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd
 l0
 L5 1
 VWfKjUmfN8mkPY:0GIGPiV1
 !s100 JP5RD7^E9`=l2X5Q0SHVa0
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1669560701
+Z8 !s110 1669795164
 !i10b 1
-Z9 !s108 1669560701.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd|
-Z11 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/ALU.vhd|
+Z9 !s108 1669795164.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd|
+Z11 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -53,25 +53,25 @@ R11
 R12
 R13
 Ecu
-Z14 w1669540387
+Z14 w1669570486
 R2
 R3
 R4
 !i122 7
 R0
-Z15 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd
-Z16 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd
+Z15 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd
+Z16 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd
 l0
 L5 1
-Vf4LJj6;Q=84`kPDLMJPI`3
-!s100 mU`;z5o<JRScK7S0hR8o=1
+V8AV^:iCSn>:LjBdS5<_zZ1
+!s100 F]DJY@9FGmiE0lDnT836U1
 R7
 31
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd|
-Z18 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/CU.vhd|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd|
+Z18 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd|
 !i113 1
 R12
 R13
@@ -79,12 +79,12 @@ Abhv
 R2
 R3
 R4
-DEx4 work 2 cu 0 22 f4LJj6;Q=84`kPDLMJPI`3
+DEx4 work 2 cu 0 22 8AV^:iCSn>:LjBdS5<_zZ1
 !i122 7
-l14
-L12 11
-VCP^cB4mnS@GLTQS[^0V?60
-!s100 A`PGAMh7mFLEf87fUSiMK1
+l13
+L11 11
+VR`VZZeLgzBH7d:B<7zOSn0
+!s100 aLeMKE1k_gEFHgScZcCh13
 R7
 31
 R8
@@ -96,24 +96,24 @@ R18
 R12
 R13
 Edemux_1to2
-R14
+Z19 w1669564847
 R3
 R4
 !i122 2
 R0
-Z19 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd
-Z20 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd
+Z20 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd
+Z21 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd
 l0
 L175 1
 VjWF>GLh;E7?>jiCAONA010
 !s100 2;h5V1m15oQDMDVkWP2FN1
 R7
 31
-Z21 !s110 1669560699
+Z22 !s110 1669795163
 !i10b 1
-Z22 !s108 1669560699.000000
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd|
-Z24 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/MUX_DEMUX.vhd|
+Z23 !s108 1669795163.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd|
+Z25 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/MUX_DEMUX.vhd|
 !i113 1
 R12
 R13
@@ -128,33 +128,33 @@ V=cUj`T2annkZNeflFg3EK2
 !s100 4967zkKN]:?7S7JCdZBfg2
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Edemux_1to4
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L197 1
 V7Q:IM<cmYaDVUDnW7jb^e3
 !s100 _>@<Uhn0zHD6ff^CkahD42
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -169,33 +169,33 @@ VGmC5?iN8UTh7PCVZ:>`D21
 !s100 H;RQ`RmcgFHgK]l1DTJ6d3
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Edemux_1to8
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L224 1
 VTXaUYBWPLbOnHFhi[9^BS2
 !s100 ;dZhKC5P>MG9Uf6NbbWT40
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -210,22 +210,22 @@ V5>@SPm<lLL0]mQAJOA`zH2
 !s100 B4AfVN[Iam3jAUVSSmzHV0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Edut
-Z25 w1669558035
+R19
 R3
 R4
 !i122 6
 R0
-Z26 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd
-Z27 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd
+Z26 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd
+Z27 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd
 l0
 L7 1
 V?l[FhaklS^iRS`KOoXA6a2
@@ -234,9 +234,9 @@ R7
 31
 R8
 !i10b 1
-Z28 !s108 1669560700.000000
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd|
-Z30 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/DUT.vhd|
+R9
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd|
+Z29 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd|
 !i113 1
 R12
 R13
@@ -253,40 +253,40 @@ R7
 31
 R8
 !i10b 1
+R9
 R28
 R29
-R30
 !i113 1
 R12
 R13
 Efsm
-Z31 w1669555463
-Z32 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z33 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z30 w1669668124
+Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z32 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R4
 !i122 5
 R0
-Z34 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd
-Z35 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd
+Z33 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd
+Z34 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd
 l0
 L6 1
 V2ZE[IJONI_@kCJf[Jad822
 !s100 UH40KF6BAolnl<GAijcmz1
 R7
 31
-Z36 !s110 1669560700
+R8
 !i10b 1
-R28
-Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd|
-Z38 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/FSM.vhd|
+R9
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd|
+Z36 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd|
 !i113 1
 R12
 R13
 Abhv
+R31
 R32
-R33
 R2
 R3
 R4
@@ -294,38 +294,38 @@ DEx4 work 3 fsm 0 22 2ZE[IJONI_@kCJf[Jad822
 !i122 5
 l20
 L15 134
-VoWF;26G0<ILZA85KDN80o3
-!s100 >_SV?=OaBTiVP7G3[a7WR3
+VmKNkELe8Cd1cjHD:M3DY;1
+!s100 Ko@TWZKDfciO:UbiW_df<1
 R7
 31
-R36
+R8
 !i10b 1
-R28
-R37
-R38
+R9
+R35
+R36
 !i113 1
 R12
 R13
 Eiitb_cpu
-Z39 w1669560663
+Z37 w1669795133
 R2
 R3
 R4
 !i122 4
 R0
-Z40 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd
-Z41 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd
+Z38 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd
+Z39 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd
 l0
 L5 1
 VQ:e07ZR[bMVT_[Z_lf;_<3
 !s100 <RICV0En>CJ`DdSBBP4=E0
 R7
 31
-R36
+R8
 !i10b 1
-R28
-Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd|
-Z43 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/IITB_CPU.vhd|
+R9
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd|
+Z41 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd|
 !i113 1
 R12
 R13
@@ -335,40 +335,40 @@ R3
 R4
 DEx4 work 8 iitb_cpu 0 22 Q:e07ZR[bMVT_[Z_lf;_<3
 !i122 4
-l119
-L10 170
-VVoWE3XQ0la1YNeRYc_cKj2
-!s100 eejahk9DNN@?cJ^fVaM:Z1
+l121
+L10 213
+VMWbGjK>`fE]czREXooUK>2
+!s100 0]hjH5fd0aaKAVj5H:dD83
 R7
 31
-R36
+R8
 !i10b 1
-R28
-R42
-R43
+R9
+R40
+R41
 !i113 1
 R12
 R13
 Emem
-Z44 w1669555004
+Z42 w1669791637
 R2
 R3
 R4
 !i122 3
 R0
-Z45 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd
-Z46 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd
+Z43 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd
+Z44 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd
 l0
 L5 1
-Vbkd^bLLQ<GBSG@W:F<UTP0
-!s100 4Ro>SY9Zi6eZ>MJFeQ7Ol2
+V1[WP:Z6Dz=VKI]dN5XHF81
+!s100 K57W3__;jVl=n49VbYiBI0
 R7
 31
-R36
-!i10b 1
 R22
-Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd|
-Z48 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Memory.vhd|
+!i10b 1
+R23
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd|
+Z46 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd|
 !i113 1
 R12
 R13
@@ -376,41 +376,41 @@ Abehav
 R2
 R3
 R4
-DEx4 work 3 mem 0 22 bkd^bLLQ<GBSG@W:F<UTP0
+DEx4 work 3 mem 0 22 1[WP:Z6Dz=VKI]dN5XHF81
 !i122 3
-l35
-L14 34
-V>O6i6Xla1Hh31TIHbhoKD3
-!s100 GCRdSocP70jILE3@C9e_00
+l36
+L15 36
+V1]Qm?CCUQSY2GJ<F:;PTZ0
+!s100 f4`TT@eW?MeLjTC[O]oI<3
 R7
 31
-R36
-!i10b 1
 R22
-R47
-R48
+!i10b 1
+R23
+R45
+R46
 !i113 1
 R12
 R13
 Emux3_2to1
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L33 1
 V33l9>6AC;`@^fCL<aKhmP0
 !s100 DQo3oKjCfG;Vz_NaRiicZ0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -425,33 +425,33 @@ VgBPLLG`LVK5kA86a4^hVM3
 !s100 AeVG5=GZ=KGiWaN_9bm9:0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Emux3_4to1
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L84 1
 V5l3N:icgQiBfLFPk=]bmZ2
 !s100 W3D4Wz0EAVN>iP[Ldh>P62
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -466,33 +466,33 @@ V2M_lW4<_^Uzab9GF6>YQi3
 !s100 oWcjCh]NmPo_ol4N5J^TU0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Emux_2to1
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L10 1
 VOcb1c?cZ7D:336z3CiNg<3
 !s100 0oa567hecHDEUbJQZg[R?1
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -507,33 +507,33 @@ Vl6n^ZKbFeV1DDS0F@oeYJ2
 !s100 <8KJ_foXU@SYbED0F55EX1
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Emux_3to1
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L111 1
 Vccm?DC:8l>B6Ro>mfgDPH1
 !s100 GNJZ]0KH>i<C51ICdY2GV0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -548,33 +548,33 @@ V`A5^MI3ZG=d5DSoYl[cT62
 !s100 MVzf=H:<[1@C4]PgUB>Tj3
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Emux_4to1
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L56 1
 VkRW[2`k]P0LkTc3cz=3EC2
 !s100 zHGK@XXYn5E]8N:0CXkbo0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -589,33 +589,33 @@ ViE]C;5iJzmI8V`R1LG9Io2
 !s100 i[hf^D1?Se6^7OK6cD_1S0
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Emux_8to1
-R14
+R19
 R3
 R4
 !i122 2
 R0
-R19
 R20
+R21
 l0
 L136 1
 VTFN8zbiSAfcVNB>P10K]D3
 !s100 :@2=3?WEcl;AgcdC>iHLc3
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -630,34 +630,34 @@ VmQa]4a[2Heo06l8EIM7]Q0
 !s100 n3I3L5ENV[SMG4e:BFNDf3
 R7
 31
-R21
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 1
 R12
 R13
 Eregisters
-Z49 w1669555000
+Z47 w1669793774
 R2
 R3
 R4
 !i122 1
 R0
-Z50 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd
-Z51 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd
+Z48 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd
+Z49 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd
 l0
 L5 1
-VbR1e45UUjm1NW@2k>SJc83
-!s100 >H2f7Bi6faFYjMSLH?TE62
+VG?6KWgOXjW5?:D_7Aj70C3
+!s100 [I:IjTYEER>MjJZkO9`TF1
 R7
 31
-R21
-!i10b 1
 R22
-Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd|
-Z53 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/RF.vhd|
+!i10b 1
+R23
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd|
+Z51 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd|
 !i113 1
 R12
 R13
@@ -665,41 +665,41 @@ Abehav
 R2
 R3
 R4
-DEx4 work 9 registers 0 22 bR1e45UUjm1NW@2k>SJc83
+DEx4 work 9 registers 0 22 G?6KWgOXjW5?:D_7Aj70C3
 !i122 1
-l23
-L16 23
-VDMdmjRlYDB==TFaG<VXmo1
-!s100 Z[Yglm4]JMS`EgK2l6Wfo1
+l24
+L17 25
+VWK9U@VjC1^Xc=U_oKF_lH1
+!s100 9:?m@2<ELLZZM^?QG12Qi0
 R7
 31
-R21
-!i10b 1
 R22
-R52
-R53
+!i10b 1
+R23
+R50
+R51
 !i113 1
 R12
 R13
 Erse9
-R14
+R19
 R3
 R4
 !i122 0
 R0
-Z54 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd
-Z55 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd
+Z52 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd
+Z53 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd
 l0
 L32 1
 Vfz@R5Bk1V]5>Q>VfP`9kG2
 !s100 PkbdGDRCNQPGG1;RGSc?>1
 R7
 31
-R21
-!i10b 1
 R22
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd|
-Z57 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/SE_RSE.vhd|
+!i10b 1
+R23
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd|
+Z55 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd|
 !i113 1
 R12
 R13
@@ -714,33 +714,33 @@ VY:eZD;GM0ao[cQ1fhlniT0
 !s100 Eb[S@5dPm3n<F7o;Tg>1<1
 R7
 31
-R21
-!i10b 1
 R22
-R56
-R57
+!i10b 1
+R23
+R54
+R55
 !i113 1
 R12
 R13
 Ese6
-R14
+R19
 R3
 R4
 !i122 0
 R0
-R54
-R55
+R52
+R53
 l0
 L4 1
 VLS8jZ6ICdTg=ZBTcZgQGm3
 !s100 PST@[Kd5o`eHXH=74h_cB1
 R7
 31
-R21
-!i10b 1
 R22
-R56
-R57
+!i10b 1
+R23
+R54
+R55
 !i113 1
 R12
 R13
@@ -755,33 +755,33 @@ VT:GD>[dVj_<SNhQFC=7Jn1
 !s100 V@m9AD0?[<H=dhT96bkSo3
 R7
 31
-R21
-!i10b 1
 R22
-R56
-R57
+!i10b 1
+R23
+R54
+R55
 !i113 1
 R12
 R13
 Ese9
-R14
+R19
 R3
 R4
 !i122 0
 R0
-R54
-R55
+R52
+R53
 l0
 L18 1
 VKW<P>LG0gRY7O3BkG=e@?3
 !s100 lMiXW@l^Q`gH5Ki^G@?CR3
 R7
 31
-R21
-!i10b 1
 R22
-R56
-R57
+!i10b 1
+R23
+R54
+R55
 !i113 1
 R12
 R13
@@ -796,22 +796,22 @@ VT0FDdRIgX7?kC=Maa[z[H1
 !s100 HL<gg6Mm4UhVc8l<hiB?22
 R7
 31
-R21
-!i10b 1
 R22
-R56
-R57
+!i10b 1
+R23
+R54
+R55
 !i113 1
 R12
 R13
 Etestbench
-Z58 w1669558000
+R19
 R4
 R3
 !i122 9
 R0
-Z59 8C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd
-Z60 FC:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd
+Z56 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd
+Z57 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd
 l0
 L7 1
 V]iKK_Z9L:G9B:i8c]3eFH0
@@ -821,8 +821,8 @@ R7
 R8
 !i10b 1
 R9
-Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd|
-!s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd|
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
+!s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
 !i113 1
 R12
 R13
@@ -840,8 +840,8 @@ R7
 R8
 !i10b 1
 R9
-R61
-Z62 !s107 C:/Users/Aakarsh Chaudhary/Documents/Git/Test/Testbench.vhd|
+R58
+Z59 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
 !i113 1
 R12
 R13
