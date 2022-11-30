@@ -24,9 +24,9 @@ VWfKjUmfN8mkPY:0GIGPiV1
 !s100 JP5RD7^E9`=l2X5Q0SHVa0
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1669825799
+Z8 !s110 1669828976
 !i10b 1
-Z9 !s108 1669825799.000000
+Z9 !s108 1669828976.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd|
 Z11 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/ALU.vhd|
 !i113 1
@@ -69,9 +69,9 @@ R7
 31
 R8
 !i10b 1
-Z17 !s108 1669825798.000000
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd|
-Z19 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd|
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd|
+Z18 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/CU.vhd|
 !i113 1
 R12
 R13
@@ -89,31 +89,31 @@ R7
 31
 R8
 !i10b 1
+R9
 R17
 R18
-R19
 !i113 1
 R12
 R13
 Edut
-Z20 w1669564847
+Z19 w1669564847
 R3
 R4
 !i122 5
 R0
-Z21 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd
-Z22 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd
+Z20 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd
+Z21 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd
 l0
 L7 1
 V?l[FhaklS^iRS`KOoXA6a2
 !s100 lZ1C@FmBCBT6L;Z1d_;4B0
 R7
 31
-Z23 !s110 1669825798
+R8
 !i10b 1
-R17
-Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd|
-Z25 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd|
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd|
+Z23 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/DUT.vhd|
 !i113 1
 R12
 R13
@@ -128,42 +128,42 @@ VifknUV]S?@]L>e<i4DbAc0
 !s100 0j:2McIKM5<M[EM8?nX_63
 R7
 31
-R23
+R8
 !i10b 1
-R17
-R24
-R25
+R9
+R22
+R23
 !i113 1
 R12
 R13
 Efsm
-Z26 w1669668124
-Z27 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z28 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z24 w1669668124
+Z25 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z26 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R4
 !i122 4
 R0
-Z29 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd
-Z30 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd
+Z27 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd
+Z28 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd
 l0
 L6 1
 V2ZE[IJONI_@kCJf[Jad822
 !s100 UH40KF6BAolnl<GAijcmz1
 R7
 31
-R23
+R8
 !i10b 1
-R17
-Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd|
-Z32 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd|
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd|
+Z30 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/FSM.vhd|
 !i113 1
 R12
 R13
 Abhv
-R27
-R28
+R25
+R26
 R2
 R3
 R4
@@ -175,34 +175,34 @@ VmKNkELe8Cd1cjHD:M3DY;1
 !s100 Ko@TWZKDfciO:UbiW_df<1
 R7
 31
-R23
+R8
 !i10b 1
-R17
-R31
-R32
+R9
+R29
+R30
 !i113 1
 R12
 R13
 Eiitb_cpu
-Z33 w1669825762
+Z31 w1669828948
 R2
 R3
 R4
 !i122 3
 R0
-Z34 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd
-Z35 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd
+Z32 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd
+Z33 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd
 l0
 L5 1
 VQ:e07ZR[bMVT_[Z_lf;_<3
 !s100 <RICV0En>CJ`DdSBBP4=E0
 R7
 31
-R23
+R8
 !i10b 1
-R17
-Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd|
-Z37 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd|
+R9
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd|
+Z35 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd|
 !i113 1
 R12
 R13
@@ -213,37 +213,37 @@ R4
 DEx4 work 8 iitb_cpu 0 22 Q:e07ZR[bMVT_[Z_lf;_<3
 !i122 3
 l121
-L10 299
-V0W=G8YGg3]Y[1Q6zL;M;91
-!s100 9Y^hGb>OYQ`K?4H5GI42M3
+L10 298
+V<geSFQ^jM?KU8e;D<B6`=3
+!s100 ZPl[>zbESzA;JKEDnBalZ1
 R7
 31
-R23
+R8
 !i10b 1
-R17
-R36
-R37
+R9
+R34
+R35
 !i113 1
 R12
 R13
 Emem
-Z38 w1669811903
+Z36 w1669828322
 R2
 R3
 R4
 !i122 2
 R0
-Z39 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd
-Z40 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd
+Z37 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd
+Z38 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd
 l0
 L5 1
 V1[WP:Z6Dz=VKI]dN5XHF81
 !s100 K57W3__;jVl=n49VbYiBI0
 R7
 31
-R23
+Z39 !s110 1669828975
 !i10b 1
-R17
+Z40 !s108 1669828975.000000
 Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd|
 Z42 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Memory.vhd|
 !i113 1
@@ -257,13 +257,13 @@ DEx4 work 3 mem 0 22 1[WP:Z6Dz=VKI]dN5XHF81
 !i122 2
 l36
 L15 36
-Vo@DF?CnU9_kL6oA92R0Kf1
-!s100 zoiBU>bjJ6Ih@@jm0kY`Q3
+VGWLPF;C2hFKT_994b7=GM1
+!s100 LH]R>F;UG^U0Y<JcDifh01
 R7
 31
-R23
+R39
 !i10b 1
-R17
+R40
 R41
 R42
 !i113 1
@@ -284,9 +284,9 @@ VG?6KWgOXjW5?:D_7Aj70C3
 !s100 [I:IjTYEER>MjJZkO9`TF1
 R7
 31
-R23
+R39
 !i10b 1
-R17
+R40
 Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd|
 Z47 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/RF.vhd|
 !i113 1
@@ -304,16 +304,16 @@ VWK9U@VjC1^Xc=U_oKF_lH1
 !s100 9:?m@2<ELLZZM^?QG12Qi0
 R7
 31
-R23
+R39
 !i10b 1
-R17
+R40
 R46
 R47
 !i113 1
 R12
 R13
 Erse9
-R20
+R19
 R3
 R4
 !i122 0
@@ -326,11 +326,11 @@ Vfz@R5Bk1V]5>Q>VfP`9kG2
 !s100 PkbdGDRCNQPGG1;RGSc?>1
 R7
 31
-R23
+R39
 !i10b 1
-Z50 !s108 1669825797.000000
-Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd|
-Z52 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd|
+R40
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd|
+Z51 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/SE_RSE.vhd|
 !i113 1
 R12
 R13
@@ -345,16 +345,16 @@ VY:eZD;GM0ao[cQ1fhlniT0
 !s100 Eb[S@5dPm3n<F7o;Tg>1<1
 R7
 31
-R23
+R39
 !i10b 1
+R40
 R50
 R51
-R52
 !i113 1
 R12
 R13
 Ese6
-R20
+R19
 R3
 R4
 !i122 0
@@ -367,11 +367,11 @@ VLS8jZ6ICdTg=ZBTcZgQGm3
 !s100 PST@[Kd5o`eHXH=74h_cB1
 R7
 31
-R23
+R39
 !i10b 1
+R40
 R50
 R51
-R52
 !i113 1
 R12
 R13
@@ -386,16 +386,16 @@ VT:GD>[dVj_<SNhQFC=7Jn1
 !s100 V@m9AD0?[<H=dhT96bkSo3
 R7
 31
-R23
+R39
 !i10b 1
+R40
 R50
 R51
-R52
 !i113 1
 R12
 R13
 Ese9
-R20
+R19
 R3
 R4
 !i122 0
@@ -408,11 +408,11 @@ VKW<P>LG0gRY7O3BkG=e@?3
 !s100 lMiXW@l^Q`gH5Ki^G@?CR3
 R7
 31
-R23
+R39
 !i10b 1
+R40
 R50
 R51
-R52
 !i113 1
 R12
 R13
@@ -427,22 +427,22 @@ VT0FDdRIgX7?kC=Maa[z[H1
 !s100 HL<gg6Mm4UhVc8l<hiB?22
 R7
 31
-R23
+R39
 !i10b 1
+R40
 R50
 R51
-R52
 !i113 1
 R12
 R13
 Etestbench
-R20
+R19
 R4
 R3
 !i122 8
 R0
-Z53 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd
-Z54 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd
+Z52 8C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd
+Z53 FC:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd
 l0
 L7 1
 V]iKK_Z9L:G9B:i8c]3eFH0
@@ -452,7 +452,7 @@ R7
 R8
 !i10b 1
 R9
-Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
 !i113 1
 R12
@@ -471,8 +471,8 @@ R7
 R8
 !i10b 1
 R9
-R55
-Z56 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
+R54
+Z55 !s107 C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/Testbench.vhd|
 !i113 1
 R12
 R13

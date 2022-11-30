@@ -1,5 +1,5 @@
 Analysis & Elaboration report for IITB_CPU
-Wed Nov 30 21:59:35 2022
+Wed Nov 30 22:52:41 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Wed Nov 30 21:59:35 2022       ;
+; Analysis & Elaboration Status      ; Successful - Wed Nov 30 22:52:41 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; IITB_CPU                                    ;
 ; Top-level Entity Name              ; DUT                                         ;
@@ -164,7 +164,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 30 21:59:22 2022
+    Info: Processing started: Wed Nov 30 22:52:29 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IITB_CPU -c IITB_CPU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -326,9 +326,9 @@ Info (12128): Elaborating entity "SE9" for hierarchy "IITB_CPU:add_instance|SE9:
 Info (12128): Elaborating entity "RSE9" for hierarchy "IITB_CPU:add_instance|RSE9:se3" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 298
 Info (12128): Elaborating entity "CU" for hierarchy "IITB_CPU:add_instance|CU:cu1" File: C:/Users/anway/OneDrive/Desktop/IITB_CPU-main/IITB_CPU.vhd Line: 299
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Wed Nov 30 21:59:35 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Wed Nov 30 22:52:41 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:19
 
 

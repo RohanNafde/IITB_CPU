@@ -176,7 +176,7 @@ if(sig1 = '1') then
 		sig2 <= T3;
 end if;
 
-if(rising_edge(clk)) then
+if(rising_edge(clk)) then--satrt wali
 	if(c2 = '0' and pc_wr = '1') then
 		pc <= std_logic_vector(unsigned(pc)+1);
 	elsif(c2 = '1' and pc_wr = '1') then
@@ -184,7 +184,13 @@ if(rising_edge(clk)) then
 	else
 		null;
 	end if;
-	if(c0 = '0' and t2_wr = '1') then
+	
+end if;
+--if(clk = '0') then
+--	
+--end if;
+if(rising_edge(clk) and c2 = '0' and c1 = '1' and c0 = '0') then-- end wali
+if(c0 = '0' and t2_wr = '1') then
 		T2 <= alu_c;
 	elsif(c0 = '1' and t2_wr = '1') then
 		T2 <= rf_d1;
@@ -192,19 +198,13 @@ if(rising_edge(clk)) then
 		null;
 	end if;
 end if;
---if(clk = '0') then
---	
---end if;
-if(rising_edge(c0)) then 
-	
-end if;
 if(falling_edge(clk)) then
 	if(sig6 = '0' and sig7 = '0') then
 		rf_d3 <= T2;
 	elsif(sig6 = '1' and sig7 = '0') then
-		rf_d3 <= rs9;
-	elsif(sig6 = '0' and sig7 = '1') then
 		rf_d3 <= mem_d0;
+	elsif(sig6 = '0' and sig7 = '1') then
+		rf_d3 <= rs9;
 	else
 		rf_d3 <= pc;
 	end if;
@@ -237,9 +237,9 @@ if(falling_edge(clk)) then
 	if(sig9 = '0' and sig10 = '0') then
 		rf_a3 <= T1(5 downto 3);
 	elsif(sig9 = '1' and sig10 = '0') then
-		rf_a3 <= T1(8 downto 6);
-	elsif(sig9 = '0' and sig10 = '1') then
 		rf_a3 <= T1(11 downto 9);
+	elsif(sig9 = '0' and sig10 = '1') then
+		rf_a3 <= T1(8 downto 6);
 	else
 		rf_a3 <= count;
 	end if;
@@ -297,7 +297,6 @@ se1: SE6 port map (A => T1(5 downto 0), B => s6);
 se2: SE9 port map (A => T1(8 downto 0), B => s9);
 se3: RSE9 port map (A => T1(8 downto 0), B => rs9);
 cu1: CU port map (C0 => C0, clk => clk, C1 => C1, C2 => C2, T1_WR =>t1_wr, T2_WR => t2_wr, T3_WR => t3_wr, RF_WR => rf_wr, PC_WR => pc_wr, Mem_WR => mem_wr);
-
 
 op1 <= alu_c;
 op2(0) <= c0;
